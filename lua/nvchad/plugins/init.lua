@@ -155,6 +155,14 @@ return {
   },
 
   {
+    "ahmedkhalf/project.nvim",
+    config = function()
+      require("nvchad.configs.project") -- or path to your project.lua
+      require("telescope").load_extension("projects")
+    end,
+  },
+
+  {
     "nvim-treesitter/nvim-treesitter",
     event = { "BufReadPost", "BufNewFile" },
     cmd = { "TSInstall", "TSBufEnable", "TSBufDisable", "TSModuleInfo" },
