@@ -156,6 +156,7 @@ return {
 
   {
     "ahmedkhalf/project.nvim",
+    lazy = false,
     config = function()
       require("nvchad.configs.project") -- or path to your project.lua
       require("telescope").load_extension("projects")
